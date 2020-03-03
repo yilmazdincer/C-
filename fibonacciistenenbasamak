@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int fibonacci(int x){
+	if(x<3)
+		return 1;
+	else 
+		return fibonacci(x-1)+fibonacci(x-2);
+}
+
+
+	int main(){
+		int basamak;
+		printf("Hangi basamagi ariyorsunuz?\n");
+		scanf("%d",&basamak);
+		printf("%d",fibonacci(basamak));
+}
